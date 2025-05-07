@@ -60,10 +60,9 @@ jobs:
             buildjet-8vcpu-ubuntu-2204-arm,
             buildjet-16vcpu-ubuntu-2204-arm,
           ]
-        node_version: [22]
       fail-fast: false
 
-    name: "Build&Test: node-${{ matrix.node_version }}, ${{ matrix.runner }}"
+    name: "Build&Test: ${{ matrix.runner }}"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -74,10 +73,10 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0
 
-      - name: Set node version to ${{ matrix.node_version }}
+      - name: Set node version to 22
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node_version }}
+          node-version: 22
           cache: "pnpm"
 
       - name: Install deps
