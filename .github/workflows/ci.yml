@@ -39,26 +39,16 @@ jobs:
         runner:
           [
             ubuntu-24.04,
-            ubuntu-24.04-arm,
             ubicloud-standard-2,
             ubicloud-standard-4,
             ubicloud-standard-8,
             ubicloud-standard-16,
             ubicloud-standard-30,
-            ubicloud-standard-2-arm,
-            ubicloud-standard-4-arm,
-            ubicloud-standard-8-arm,
-            ubicloud-standard-16-arm,
-            ubicloud-standard-30-arm,
             buildjet-2vcpu-ubuntu-2204,
             buildjet-4vcpu-ubuntu-2204,
             buildjet-8vcpu-ubuntu-2204,
             buildjet-16vcpu-ubuntu-2204,
             buildjet-32vcpu-ubuntu-2204,
-            buildjet-2vcpu-ubuntu-2204-arm,
-            buildjet-4vcpu-ubuntu-2204-arm,
-            buildjet-8vcpu-ubuntu-2204-arm,
-            buildjet-16vcpu-ubuntu-2204-arm,
           ]
       fail-fast: false
 
@@ -128,26 +118,16 @@ jobs:
         runner:
           [
             ubuntu-24.04,
-            ubuntu-24.04-arm,
             ubicloud-standard-2,
             ubicloud-standard-4,
             ubicloud-standard-8,
             ubicloud-standard-16,
             ubicloud-standard-30,
-            ubicloud-standard-2-arm,
-            ubicloud-standard-4-arm,
-            ubicloud-standard-8-arm,
-            ubicloud-standard-16-arm,
-            ubicloud-standard-30-arm,
             buildjet-2vcpu-ubuntu-2204,
             buildjet-4vcpu-ubuntu-2204,
             buildjet-8vcpu-ubuntu-2204,
             buildjet-16vcpu-ubuntu-2204,
             buildjet-32vcpu-ubuntu-2204,
-            buildjet-2vcpu-ubuntu-2204-arm,
-            buildjet-4vcpu-ubuntu-2204-arm,
-            buildjet-8vcpu-ubuntu-2204-arm,
-            buildjet-16vcpu-ubuntu-2204-arm,
           ]
       fail-fast: false
     name: "${{ matrix.runner }}: Lint"
